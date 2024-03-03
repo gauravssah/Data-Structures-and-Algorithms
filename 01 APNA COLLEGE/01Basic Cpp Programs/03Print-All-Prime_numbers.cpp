@@ -24,15 +24,40 @@ int main()
     cout << "Enter the value of n: ";
     cin >> n;
 
-    cout << "Prime numbers between 1 and " << n << " are: ";
-    for (int i = 2; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        if (isPrime(i))
+        if (i > 2)
         {
-            cout << i << " ";
+
+            for (int j = 2; j < i; j++)
+            {
+                if (i % j == 0)
+                {
+                    cout << i << " Not Prime!" << endl;
+                    break;
+                }
+                else
+                {
+                    cout << i << " Prime!" << endl;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            cout << i << "  Prime!" << endl;
         }
     }
-    cout << endl;
+
+    // cout << "Prime numbers between 1 and " << n << " are: ";
+    // for (int i = 2; i <= n; i++)
+    // {
+    //     if (isPrime(i))
+    //     {
+    //         cout << i << " ";
+    //     }
+    // }
+    // cout << endl;
 
     return 0;
 }
