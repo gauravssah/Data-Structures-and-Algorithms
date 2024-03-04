@@ -18,18 +18,18 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        if (myArray[i] > maxNo)
-        {
-            maxNo = myArray[i];
-        }
-    }
+        // if (myArray[i] > maxNo)
+        // {
+        //     maxNo = myArray[i];
+        // }
 
-    for (int i = 0; i < n; i++)
-    {
-        if (myArray[i] < minNo)
-        {
-            minNo = myArray[i];
-        }
+        // if (myArray[i] < minNo)
+        // {
+        //     minNo = myArray[i];
+        // }
+
+        maxNo = max(maxNo, myArray[i]);
+        minNo = min(minNo, myArray[i]);
     }
 
     cout << "The Max No in Given Array is : " << maxNo << endl;
