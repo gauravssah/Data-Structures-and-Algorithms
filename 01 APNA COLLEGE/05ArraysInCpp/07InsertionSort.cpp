@@ -1,5 +1,9 @@
 // Insertion sort is a simple sorting algorithm that works by building the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. However, insertion sort is often used as a component of more complex algorithms, such as quicksort.
 
+// The worst-case (and average-case) complexity of the insertion sort algorithm is O(n²).
+
+// The best-case time complexity of insertion sort algorithm is O(n) time complexity.
+
 #include <iostream>
 using namespace std;
 

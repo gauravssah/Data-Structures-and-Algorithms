@@ -1,3 +1,7 @@
+// Linear search is a method for finding a particular value in a list. It works by checking each element of the list one at a time until the desired value is found. If the value is not found, the search returns -1.
+
+// Linear search is a simple algorithm, but it can be inefficient for large lists. This is because it has to check every element of the list, even if the value is at the beginning of the list.
+
 #include <iostream>
 using namespace std;
 
