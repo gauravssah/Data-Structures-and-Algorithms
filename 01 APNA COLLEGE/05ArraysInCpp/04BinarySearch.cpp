@@ -33,7 +33,7 @@ int main()
     cout << "Enter the size of Array." << endl;
     cin >> n;
 
-    // array must be in increasing order.
+    // Array must be in Sorted order.
     int arr[n];
     cout << "Enter the element of array." << endl;
 
