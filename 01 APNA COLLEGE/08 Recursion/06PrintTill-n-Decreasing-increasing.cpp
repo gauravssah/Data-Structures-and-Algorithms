@@ -30,10 +30,10 @@ int main()
     cout << "Enter the n" << endl;
     cin >> n;
 
-    cout << "Printing -Decreasing Order" << endl;
+    cout << "Printing - Decreasing Order" << endl;
     dec(n);
     cout << endl;
-    cout << "Printing -Increasing Order" << endl;
+    cout << "Printing - Increasing Order" << endl;
     inc(n);
 
     return 0;
