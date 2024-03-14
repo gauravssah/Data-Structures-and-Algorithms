@@ -81,7 +81,14 @@ int main()
 
     display(head);
 
-    cout << searching(head, 4);
+    if (searching(head, 40))
+    {
+        cout << "Found." << endl;
+    }
+    else
+    {
+        cout << "Not Found!!" << endl;
+    }
 
     return 0;
 }
