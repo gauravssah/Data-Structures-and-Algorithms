@@ -53,6 +53,34 @@ bool searching(node *head, int key)
     return false;
 }
 
+void deletionInList(node *&head, int val)
+{
+    if (head == NULL)
+    {
+        return;
+    }
+
+    node *temp = head;
+
+    if (temp->data == val)
+    {
+        node *todelete = head;
+        head = head->next;
+        delete todelete;
+
+        return;
+    }
+
+    while (temp->next->data != val)
+    {
+        temp = temp->next;
+    }
+
+    node *deletingNode = temp->next;
+    temp->next = temp->next->next;
+    delete deletingNode;
+};
+
 void display(node *head)
 {
     node *temp = head;
@@ -63,7 +91,7 @@ void display(node *head)
     }
 
     cout << "NULL" << endl;
-}
+};
 
 int main()
 {
@@ -77,7 +105,11 @@ int main()
 
     insertAtHead(head, 0);
     insertAtHead(head, 10);
-    insertAtHead(head, 02);
+    insertAtHead(head, 20);
+
+    display(head);
+    cout << "After deleting." << endl;
+    deletionInList(head, 20);
 
     display(head);
 
