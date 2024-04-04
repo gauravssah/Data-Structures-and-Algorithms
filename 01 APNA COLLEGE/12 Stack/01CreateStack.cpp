@@ -57,19 +57,17 @@ public:
 int main()
 {
     Stack st;
-    st.push(5);
+    st.push(7);
     st.push(8);
-    st.push(6);
+    st.push(9);
 
     cout << st.Top() << endl;
     cout << st.empty() << endl;
     st.pop();
+    st.pop();
     cout << st.Top() << endl;
 
     st.pop();
-    st.pop();
-    st.pop();
-
     cout << st.empty() << endl;
 
     return 0;
