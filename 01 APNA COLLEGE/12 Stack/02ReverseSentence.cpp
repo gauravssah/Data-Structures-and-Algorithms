@@ -30,7 +30,11 @@ void reverseSentence(string s)
 int main()
 {
 
-    string s = "Hey, how Are Doing?";
+    // string s = "Hey, how Are Doing?";
+    cout << "Enter Your Sentence" << endl;
+    string s;
+    getline(cin, s);
+
     reverseSentence(s);
 
     return 0;
