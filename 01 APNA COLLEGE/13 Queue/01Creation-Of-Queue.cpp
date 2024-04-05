@@ -59,7 +59,6 @@ public:
         }
 
         cout << "Peek Element -> " << arr[front] << endl;
-        ;
     }
 
     bool empty()
