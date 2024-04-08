@@ -6,6 +6,7 @@
         "*.tcc": "cpp",
         "forward_list": "cpp",
         "list": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "algorithm": "cpp"
     }
 }
