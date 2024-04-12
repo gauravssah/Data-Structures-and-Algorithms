@@ -60,7 +60,7 @@ int LCA(Node *root, int n1, int n2)
 };
 
 // --------- 2nd Way --------------
-// Single tree traversal , TC - O(n);
+// Single Tree Traversal Method: ,  Time Complexity: - O(n);
 
 Node *LCA2(Node *root, int n2, int n1)
 {
