@@ -46,7 +46,7 @@ int main()
     int arr[] = {10, 20, 30, 40, 50};
     Node *root = sortedArrayToBST(arr, 0, 4);
 
-    preorderPrint(root);
+    preorderPrint(root); // 30 10 20 40 50
     cout << endl;
 
     return 0;
