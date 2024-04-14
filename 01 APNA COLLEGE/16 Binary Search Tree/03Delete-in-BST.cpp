@@ -66,7 +66,7 @@ Node *deleteInBST(Node *root, int key)
     }
 
     return root;
-}
+};
 
 void inOrderOfTree(Node *root)
 {
@@ -78,7 +78,7 @@ void inOrderOfTree(Node *root)
     inOrderOfTree(root->left);
     cout << root->data << " ";
     inOrderOfTree(root->right);
-}
+};
 
 int main()
 {
